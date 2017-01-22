@@ -1,0 +1,106 @@
+    a {text-decoration:none;}
+    body {background-color:#e8e3cd;}
+	.header {background-color:#501616;}
+	.header h1 {
+			color:#f4efda; 
+			line-height:65px; 
+			text-align: center;
+            margin: 0px;}
+    .header h2 {
+            color:#f4efda;  
+			line-height:50px;
+			text-align: center;
+            margin: 0px;}
+	.Menu {
+			background-color:#435d43; 
+			color:#f4efda; 
+			font: large serif;
+            text-align: center;}
+	.Menu a {text-decoration: none; 
+			color: #f4efda;}
+	.MenuItem {
+			padding: 20px; 
+			line-height:40px;}
+	.Thumbnails { 
+			padding:10px;}
+	.Image {
+			background-color:#f4efda;
+            padding: 5px;
+			float: left;
+            line-height: 15px;
+            margin-right: 10px;}
+	.Image h2 {
+			color:#501616; 
+			font: x-large serif;
+            padding: 5px;}
+    .Image span.text {
+            color:#501616; 
+			font: medium serif;}
+	.Product {
+			padding: 5px;
+            line-height: 15px;}
+    .Product h2 {
+            color:#435d43; 
+			font: x-large serif;
+            padding: 5px}
+	.Product h4 {
+			color:#435d43; 
+			font: medium serif;
+            padding: 5px;}
+    .Product span.text {
+			color:#435d43; 
+			font: medium serif;}
+    .Description{
+            padding: 15px;}
+	.Description h4 {
+			color:#435d43; 
+			font: medium serif;
+            padding-top: 20px;}
+    .Description span.text {
+			color:#435d43; 
+			font: medium serif;
+            padding-top:15px;}
+    .Description span.title {
+            font-style: italic;}
+	.Title {
+			font: x-large serif;
+			color:#435d43;}
+	.Collection h4 {
+			color:#435d43; 
+			font: medium serif;
+			margin: 10px;
+			clear: left}
+	.Footer {
+			background-color:#435d43; 
+			color:#f4efda; 
+			font: large serif;
+			line-height:40px;}
+	.Merchant h4 {
+			color:#435d43; 
+			font: medium serif;}
+	.Database h4 {
+			color:#435d43; 
+			font: medium serif;}
+	.Images h4 {
+			color:#435d43; 
+			font: medium serif;}
+	.Layout h4 {
+			color:#435d43; 
+			font: medium serif;}
+	.Profiles h4 {
+			color:#435d43; 
+			font: medium serif;}
+	.Currency h4 {
+			color:#435d43; 
+			font: medium serif;}
+    .Currency span.title {
+            font-style: italic;}
+    #img {
+            width: 100%;
+            height: auto;
+            position: fixed;
+            top: 45;
+            left: 0}
+    #img2 {
+            width: 100%;
+            height: auto;}
