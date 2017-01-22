@@ -1,0 +1,17 @@
+    {# for loop with departments, with a for loop of item entries inside #}
+
+{% extends "base.html" %}
+{% block body %}
+    <ul>
+    {% for dept in departments %}
+        <li>
+            From the {{ dept }} department:
+            <ul> 
+            {% for row in departments[dept] %}
+                <li><a href="/title/{{row['self']}}"> {{row['title']}}</a></li>
+            {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}

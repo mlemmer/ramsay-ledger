@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block body %}
+
+		<div class="Image">
+            <h2><strong>Artifact: {{entry.artifact}}</strong></h2>
+			<img src="/static/{{entry.image}}" alt="{{entry.title}}" />
+            <p><span class="text"><strong>Materials:</strong></span> {{entry.materials}}</p>
+            <p><span class="text"><strong>Dimensions:</strong></span> {{entry.dimensions}}</p>
+            <p><span class="text"><strong>Date:</strong></span> {{entry.date}}</p>
+            <p><span class="text"><strong>Origin:</strong></span> {{entry.origin}}</p>
+            <p><span class="text"><strong>Distance from origin:</strong><span> {{entry.distance}}</p>
+			<p><span class="text"><strong>Collection:</strong></span> <a href="{{entry.link}}">{{entry.collection}}</a>
+            <p> {% if entry.license %}
+                <span class="text"><strong>License: </strong></span> <a href="{{entry.link2}}">{{entry.license}}</a>
+                {% endif %}</p>
+		</div>
+
+        <div class="Product">
+            <h2><strong>Ledger Entry: {{entry.title}}</strong></h2>
+			<img src="/static/{{entry.ledger}}" alt="{{entry.title}}" />
+            <p><span class="text"><strong>Department: </strong></span> {{entry.department}}</p>
+            <p><span class="text"><strong>Customer: </strong></span> {{entry.customer}}</p>
+            <p><span class="text"><strong>Ledger Page: </strong></span>{{entry.page}}</p>
+            <p><span class="text"><strong>Imported From: </strong></span>{{entry.origin2}}
+        </div>
+        <div class="Description">
+            <h4><strong>Product Description</strong></h4>
+			<p>{{entry.description}}</p>
+            <p><span class="text"><strong>Citation: </strong></span>{{entry.author}} <span class="title">{{entry.book}}</span> {{entry.publisher}}; {{entry.author2}} <span class="title">{{entry.book2}}</span> {{entry.publisher2}}</p>
+			<p><span class="text"><strong>Historical Price: </strong></span> {{entry.pounds}}; <span class="text"><strong>Modern USD: </strong></span> ${{entry.dollars}}</p>
+            <h4><strong>Product Analytics</strong></h4>
+            <p>{{entry.analytics}}</p>
+
+		<div class="Collection">
+            <h4> </h4>
+		</div>
+
+		<div class="Footer">
+			<span class="MenuItem">People who bought this item also bought: </span>
+
+		<div>
+			<span class ="Thumbnails"><img src="/static/AllspiceThumbnail.jpg" alt="Allspice" /></span>
+			<span class ="Thumbnails"><img src="/static/BoheaTeaThumbnail.jpg" alt="Bohea Tea" /></span>
+			<span class ="Thumbnails"><img src="/static/CinnamonThumbnail.jpg" alt="Cinnamon" /></span>
+			<span class ="Thumbnails"><img src="/static/GingerThumbnail.jpg" alt="Ginger" /></span>
+			<span class ="Thumbnails"><img src="/static/BreechesBuckleThumbnail.jpg" alt="Breeches Buckle" /></span>
+			<span class ="Thumbnails"><img src="/static/ShoeBuckleThumbnail.jpg" alt="Shoe Buckle" /></span>
+			<span class ="Thumbnails"><img src="/static/ShoesThumbnail.jpg" alt="Shoes" /></span>
+		</div>
+
+{% endblock %}

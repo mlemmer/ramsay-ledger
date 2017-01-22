@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block body %}
+
+		<div class="Image">
+			<img src="/static/{{entry.image}}" alt="Stoneware mug" />
+            <h4><strong>Image Credits</strong></h4>
+			<p>Collection: <a href= "{{entry.link}}">{{entry.collection}}</a></p>
+		</div>
+
+        <div class="Product">
+                {% if entry.title %}
+                    <h2>{{entry.title}}</h2>
+                {% else %}
+                    <h2>Product Title</h2>
+                {% endif %}
+            <p>Department: {{entry.department}}</p>
+            <p>Materials: {{entry.materials}}</p>
+            <p>Dimensions: {{entry.dimensions}}</p>
+            <p>Distance from origin: {{entry.distance}}</p>
+            <p>Page in ledger: {{entry.page}}</p>
+        </div>
+        <div class="Description">
+            <h4><strong>Product Description</strong></h4>
+			<p>{{entry.description}}</p>
+
+		<div class="Price">
+			<h4><strong>Historical Price	{{entry.pounds}}</strong></h4>
+			<h4><strong>Modern USD			{{entry.dollars}}</strong></h4>
+		</div>
+
+		<div class="Footer">
+			<span class="MenuItem">People who bought this item also bought:</span>
+
+		<div>
+			<span class ="Thumbnails"><img src="/static/MugThumbnail.jpg" alt="Stoneware mug" /></span>
+			<span class ="Thumbnails"><img src="/static/MugThumbnail.jpg" alt="Stoneware mug" /></span>
+			<span class ="Thumbnails"><img src="/static/MugThumbnail.jpg" alt="Stoneware mug" /></span>
+			<span class ="Thumbnails"><img src="/static/MugThumbnail.jpg" alt="Stoneware mug" /></span>
+			<span class ="Thumbnails"><img src="/static/MugThumbnail.jpg" alt="Stoneware mug" /></span>
+		</div>
+
+{% endblock %}

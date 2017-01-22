@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block body %}
+    <div class="Intro">
+        <p>What can a 250 year old merchant’s ledger tell us about consumer purchases? This site hopes to make a dusty ledger more familiar and fun by presenting the book's historical evidence as it might be encountered in a modern on-line store. The user can read about what they are shopping for, see what similar items might look like, examine a range of options, and see a modern cost comparison. They can also see some of the range of other items purchased by a customer. Future features will include more information on customers and more complex diagnostic analysis of purchases.</p>
+    </div>
+
+    <div class="Merchant">
+    <h4><strong>Merchant Background</strong></h4>
+        <p>William Ramsay was a merchant and civic official who lobbied with the Virginia General Assembly to establish the town of Alexandria, VA. The Ramsay-Dixon store in Alexandria sold a huge variety of goods: for home (cooking and cleaning, sewing furnishings and clothes), for building and agriculture (tools and supplies), for personal use (like combs or jewelry), for reading and writing (books, paper and supplies), as well as grocery items (dry goods, spices, and beverages).</p>
+        <p>The products listed in the database reflect a globalized consumer market with items from across Europe, India, China, the West Indies, and the Caribbean.  The ledger, housed at the Smithsonian archive, begins when the store was founded in 1753 and continues through 1756. Ramsay used double entry accounting, where daily sales were recorded in a daybook then debts were copied into the ledger. The ledger, therefore, records the dated itemized purchases made on credit on the left with payments (credit) listed on the facing page.</p>
+        <p>Since the daybook does not survive, we do not have complete information on cash sales and sadly cannot fully understand some financial issues, even foot traffic in the store. The ledger does, however, reflect a wide range of purchases by a culturally diverse range of customers.</p>
+    </div>
+
+    <div class="Database">
+        <h4><strong>Database Information</strong></h4>
+        <p>Since the ledger itself is nearly 900 pages long, a full database of all of the purchases is not practical. Instead, the analytical data for this website comes from a series of four compiled data sets.</p>
+        <ul>
+            <li>The original data set was compiled to answer questions about the kinds of things available at the store for the new business history exhibition <a href="http://americanhistory.si.edu/american-enterprise"> "American Enterprise" </a> at the Smithsonian American History Museum that opened in 2015.  Carried out as part of a 2013 seminar at UW Madison with Dr. Ann Smart Martin, a combination of undergraduate and graduate students created a database of 637 customers and 1,787 objects from the ledger. Because no copy of the ledger was yet available in Madison to study, the class originally relied on a series of hand-written notes on customers and purchases undertaken some years ago and available at the Smithsonian archives. These purchases likely were originally selected because they were highly detailed or were considered important or unusual.</li>
+        </ul>
+    <p>After a microfilm copy of the database became available, later data was collected to answer research questions about the customer profile of the store and to make information on consumer goods more complete:</p>
+        <ul>
+            <li>To create a more random customer study, a 10% sample of the customers in the ledger was created yielding 59 customers and 1,365 objects (2014)</li>
+            <li>To particularly study female consumer patterns, a data set of all women customers was created yielding 38 customers and 890 objects (2015).  The women were identified based on names and designated marital status, like Miss or Mrs.</li>
+            <li>To investigate questions of purchases of enslaved or free African-Americans, a final data set was created of African American customers. The initial search criteria was for customers who were either identified as property or negroes, or identified with only one name. A thorough search of the ledger produced only 5 customers grouped together on page 233 with a total of only 39 entries.</li>
+        </ul>
+    </div>
+
+    <div class="Layout">
+    <h4><strong>Layout</strong></h4>
+        <p>In order to make the objects in the database more interesting and more tangible to the public audience, we have paired them with examples from roughly contemporary contexts. These images are representative of the types of objects that appear in the ledger, but cannot reflect the exact objects sold. The information in each of the item entries is therefore divided into two categories. To the left there is an image of a surviving object that roughly fits the description of an purchase in the ledger. All of the information below the image is pertinent to that object specifically. To the right is information about the product listed in the database along with general information about the type of object. Since there were, in most cases, multiple sales of each type of object, we've also included analytical information on the quantity and variety of each type of object.</p>
+    </div>
+
+    <div class="Images">
+        <h4><strong>Images</strong></h4>
+        <p>While we continue to seek the best visual representations, our images fall within a century of the 1753-1756 ledger dates, with the exception of food and spice items, for which we've included modern images of products which have changed little in appearance over time.</p>
+        <p>Where possible, we've used images that were either in the public domain or released under copy-left licenses. Some images remain all rights reserved to their parent institutions, but are released for academic or non-commercial re-use. For each item entry, the licensing information appears beneath a link to the collection or source of the image.</p>
+    </div>
+
+    <div class="Profiles">
+        <h4><strong>Customer Profiles</strong></h4>
+        <p>An upcoming feature of our website will be customer profiles. Here we plan to give a brief history or background of the customer as well as a list of their purchases and spending habits. We hope here to emphasize the diversity of the customers represented in the ledger.</p>
+    </div>
+
+    <div class="Currency">
+        <h4><strong>Currency Conversion</strong></h4>
+        <p>As economic historians we acknowledge that there is no easy way to give an accurate modern price for items sold in colonial America. Factors that went into establishing historical prices including availability, import, taxes, and market are difficult to reconstruct and do not map directly to the modern economy. Moreover, the value that consumers placed on different items is not easily quantifiable. For more information, see: Crews, Ed. <a href="http://www.history.org/foundation/journal/summer02/money2.cfm"> "How Much Is That in Today’s Money?" </a><span class="title">CW Journal</span> (Summer 02).</p>
+        <p>However, in order to give viewers a frame of reference for the prices of items in the ledger, we felt it important to give a rough idea of their equivalent prices in modern currency. While in most cases it is more productive to compare historical prices in relation to the average income of the customer, this method does not scale easily to the format of an online store. Our currency conversions were calculated with the aid of <a href="http://measuringworth.com"> MeasuringWorth.com </a>. We first calculated the <a href="https://www.measuringworth.com/m/calculators/ukcompare/"> retail price index </a> with the initial year of 1753 to the modern UK pound circa 2014. We then converted the <a href="https://www.measuringworth.com/exchange/">exchange rate </a> from UK pounds to US dollars.
+    </div>
+
+    <div class="Funding">
+        <p>Funding was provided for data entry and analysis in 2014-16 from the Research Competition, Graduate School, University of Wisconsin-Madison.  Graduate students involved in this project included Monica Welke, Ann Glascock, Morgan Lemmer-Webber, and Chris Slaby. Web development and design by Morgan Lemmer-Webber.</p>
+    </div>
+{% endblock %}
