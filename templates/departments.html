@@ -3,11 +3,11 @@
 {% extends "base.html" %}
 {% block body %}
     <ul>
-    {% for dept in departments %}
+    {% for dept in sorted(departments) %}
         <li>
             <h2><strong>From the {{ dept }} department:</strong></h2>
             <ul> 
-            {% for row in departments[dept] %}
+            {% for row in sorted(departments[dept], key=title_row) %}
                 <li><a href="/title/{{row['self']}}"> {{row['title']}}</a></li>
             {% endfor %}
             </ul>
