@@ -29,7 +29,7 @@ def static_save_page(page_name):
     page_filename = page_directory + "index.html"
     if not os.path.exists(page_directory):
         os.makedirs(page_directory)
-    with open(page_filename, "w") as page_file:
+    with open(page_filename, mode="w", encoding="utf-8") as page_file:
         page_file.write(r.text)
 
 FIXED_PAGES = ["", "about/", "wishlists/", "departments/"]
