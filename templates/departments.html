@@ -2,10 +2,15 @@
 
 {% extends "base.html" %}
 {% block body %}
+    <div class="Currency">
+        <p>Unlike modern department stores, eighteenth-century general purpose retail stores were hardly sorted into departments. As inventories of store goods demonstrate they were grouped on shelves, others were in pigeon holes, and some were still in boxes. However, for the ease of modern viewers, we sorted this site into discrete departments as a parallel to familiar e-retail sites.</p>
+        <p>For more information see:  Ann Smart Martin. "Commercial Space as Consumption Arena: Retail Stores in Early Virginia." In <span class="title">People, Power, Places: Perspectives in Vernacular Architecture VIII.</span> Knoxville: University of Tennessee Press, 2000.</p>
+    </div>
+
     <ul>
     {% for dept in sorted(departments) %}
         <li>
-            <h2><strong>From the {{ dept }} department:</strong></h2>
+            <h2><strong>{{ dept }}:</strong></h2>
             <ul> 
             {% for row in sorted(departments[dept], key=title_row) %}
                 <li><a href="/title/{{row['self']}}"> {{row['title']}}</a></li>
