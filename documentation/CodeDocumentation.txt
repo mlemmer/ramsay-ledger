@@ -1,0 +1,43 @@
+This document has instructions and commands for running the Ramsay website in a virtual environment, running the static export generator, and committing to github
+
+
+
+*To run the website in a virtual environment: 
+
+mlemmer@rooibos:~/Desktop/Documents/Database/flaskproject$ source venv/bin/activate
+
+;;If you get an error saying flask is not found:
+
+(venv) mlemmer@rooibos:~/Desktop/Documents/Database/flaskproject$ pip install flask
+
+(venv) mlemmer@rooibos:~/Desktop/Documents/Database/flaskproject$ pythonRamsayFlaskDB.py
+
+;;To quit the venv, press CTRL+C
+;;To view changes made in the csv database while the venv is running, first quit the venv, then save the csv and re-run RamsayFlaskDB.py
+
+
+
+*To export new static files, run these commands in a second terminal while the venv is running in the first terminal:
+
+mlemmer@rooibos:~/Desktop/Documents/Database/flaskproject$ source venv/bin/activate
+
+(venv) mlemmer@rooibos:~/Desktop/Documents/Database/flaskproject$ python3 save_static.py
+
+(venv) mlemmer@rooibos:~/Desktop/Documents/Database/flaskproject$ deactivate
+
+
+
+*To update and push to git:
+
+mlemmer@rooibos:~/Desktop/Documents/Database/flaskproject$ git status
+;;This will register which documents have either changed or have been made since the last commit
+
+mlemmer@rooibos:~/Desktop/Documents/Database/flaskproject$ git add filename.csv
+;;Add each individual file. You can stage multiple files to commit at the same time
+
+mlemmer@rooibos:~/Desktop/Documents/Database/flaskproject$ git commit -m "commit message"
+;;This will commit whatever files you've staged to be added when you push. Include a message explaining what changes you've made
+
+mlemmer@rooibos:~/Desktop/Documents/Database/flaskproject$ git push
+;;This uploads the files to the github repository
+
